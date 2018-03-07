@@ -34,3 +34,7 @@ class InsertionSort {
     printArray(arr);
   }
 }
+
+// Time Complexity: O(n*n)
+// Space: O(1)
+// Takes longest if the list is in reverse order, quickest if it's already sorted
