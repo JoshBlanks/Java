@@ -54,14 +54,11 @@ import java.util.*;
 class Solution {
     public int solution(int X, int[] A) {
         int count = 0;
-        ArrayList<Integer> arr = new ArrayList<Integer>();
+        int[] arr = new int[X + 1];
 
         for(int i = 0; i < A.length; i++) {
-            // System.out.println("Element to check: " + A[i]);
-            // System.out.println("Current AL: " + arr);
-            // System.out.println("Count: " + count);
-            if(!arr.contains(A[i])) {
-                arr.add(A[i]);
+            if(arr[A[i]] == 0) {
+                arr[A[i]] = A[i];
                 count++;
             }
 
